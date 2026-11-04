@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ivbd-interior-visualisation.usefulark.chatgpt.site/sitemap.xml
