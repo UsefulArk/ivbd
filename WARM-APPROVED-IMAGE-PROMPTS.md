@@ -2,7 +2,7 @@
 
 Generated with the built-in image generation tool on 31 October 2026.
 
-The supplied revised Warm Residence floor plan is the controlling visual reference. Its original PNG is preserved without modification at dist/assets/warm-approved-plan.png. The room images are illustrative concept views, not measured architectural drawings. Image generation may interpret details; use the supplied plan for the authoritative layout.
+The supplied revised Warm Residence floor plan is the controlling visual reference. Its original PNG is preserved without modification at assets/warm-approved-plan.png. The room images are illustrative concept views, not measured architectural drawings. Image generation may interpret details; use the supplied plan for the authoritative layout.
 
 The website uses responsive WebP versions at 480, 960 and 1536 pixels wide. The separate image download includes the selected original PNG renders.
 

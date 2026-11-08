@@ -6,14 +6,14 @@ The site contains a homepage, two complete apartment concept pages and a privacy
 
 ## Editing
 
-- `dist/index.html`: homepage layout and copy.
-- `dist/warm-residence.html` and `dist/quiet-apartment.html`: apartment plans, room images and captions. Their galleries work from the HTML.
-- `dist/styles.css`: shared desktop and phone styles.
-- `dist/app.js`: mobile menu, room tabs, gallery lightbox and enquiry actions.
-- `dist/site-content.js`: contact details, homepage room-tab content and design packages. The apartment collection data is also retained here as an editable reference.
-- `dist/privacy.html` and `dist/privacy.js`: privacy policy and contact-status handling.
-- `dist/assets/*-approved-plan.png`: the original user-approved floor plans. The matching WebP files are used for display; SVG wrappers add transparent room links without redrawing the plans.
-- `dist/assets/*-v3-{480,960,1536}.webp`: responsive room photographs. Keep all three sizes when replacing a photo, or update its source attributes.
+- `index.html`: homepage layout and copy.
+- `warm-residence.html` and `quiet-apartment.html`: apartment plans, room images and captions. Their galleries work from the HTML.
+- `styles.css`: shared desktop and phone styles.
+- `app.js`: mobile menu, room tabs, gallery lightbox and enquiry actions.
+- `site-content.js`: contact details, homepage room-tab content and design packages. The apartment collection data is also retained here as an editable reference.
+- `privacy.html` and `privacy.js`: privacy policy and contact-status handling.
+- `assets/*-approved-plan.png`: the original user-approved floor plans. The matching WebP files are used for display; SVG wrappers add transparent room links without redrawing the plans.
+- `assets/*-v3-{480,960,1536}.webp`: responsive room photographs. Keep all three sizes when replacing a photo, or update its source attributes.
 - `IMAGE-PROMPTS.md`: the complete prompt set and plan references used for the new room images.
 
 Open the extracted download folder in VS Code. Preview `index.html` with the Live Server extension, or open it directly in your browser. Keep the assets folder with the HTML, CSS and JavaScript.
@@ -51,3 +51,9 @@ References: https://developer.chrome.com/docs/modern-web-guidance/guides/ui-beha
 ## Services preview and cursor glow fix
 
 The services floor-plan teaser is a block-level link using the approved WebP directly, with intrinsic dimensions. This avoids inline-link fragments and external-image SVG restrictions. interactions.js also adds a non-interactive bronze cursor aura on fine, hover-capable pointers; it stops on pointer leave, keyboard use, window blur and reduced-motion changes.
+
+## Bronze line motion update
+
+The new opening, gallery and menu motion is documented in MOTION-NOTES.md with timing controls, reference links, browser test results and measurement limits. The entrance uses a sessionStorage flag named ivbd.intro.seen.v4. The privacy policy documents this flag.
+
+The first-visit loading signature and responsive room camera motion are documented in MOTION-NOTES.md. No build step or added dependencies.
