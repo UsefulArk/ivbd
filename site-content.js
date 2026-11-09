@@ -1,9 +1,9 @@
 // Contact details and illustrative apartment collections.
 window.IVBD = {
   "contact": {
-    "whatsapp": "XXXXXXX",
+    "whatsapp": "+8801614886374",
     "email": "",
-    "facebook": "",
+    "facebook": "https://www.facebook.com/profile.php?id=61594814672042",
     "formEndpoint": ""
   },
   "apartments": [

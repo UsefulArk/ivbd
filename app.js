@@ -167,8 +167,8 @@
   const facebook = /^https:\/\//.test(contacts.facebook || '') ? contacts.facebook : '';
   const endpoint = /^https:\/\//.test(contacts.formEndpoint || '') ? contacts.formEndpoint : '';
   const channelList = [
-    {label:whatsapp ? 'Chat on WhatsApp' : 'WhatsApp · XXXXXXX',url:whatsapp ? `https://wa.me/${whatsapp}` : '',note:'Number to be added'},
-    {label:'Message on Facebook',url:facebook,note:'Page link to be added'},
+    {label:whatsapp ? 'Chat on WhatsApp' : 'WhatsApp · +8801614886374',url:whatsapp ? `https://wa.me/${whatsapp}` : '',note:'Number is added'},
+    {label:'Message on Facebook',url: 'https://www.facebook.com/profile.php?id=61594814672042' ,note:' link is  added'},
     ...(email ? [{label:'Email us',url:`mailto:${email}`}] : [])
   ];
   channelList.forEach(item => {
